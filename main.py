@@ -5,7 +5,7 @@ def count_words(text: str) -> int:
     return len(text.split())
 
 def count_characters(text: str) -> dict[str, int]:
-    """Returns the number of characters in a given text."""
+    """Returns the alphabetic characters' frequencies in given text."""
     frequencies: dict[str, int] = {}
     for each_char in text:
         if not each_char.isalpha():
@@ -25,3 +25,4 @@ with open(BOOK, encoding='utf-8') as file:
     print()
     for char, count in count_characters(book_text).items():
         print(f"The '{char}' character was found {count} times")
+    print("--- End of report ---")
