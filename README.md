@@ -1,2 +1,1 @@
-# bookbot
-Boot.dev Python exercise (book analyser)
+BookBot is my first project!
